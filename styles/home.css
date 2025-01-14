@@ -2,32 +2,48 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5; /* Improved readability */
+    background-color: #f0f0f0; /* Added a light background color */
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 1.5rem; /* Increased padding for better spacing */
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added a shadow for a slight pop-out effect */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Ensures better alignment for modern layouts */
+    justify-content: center;
+    gap: 1rem; /* Replaced margin-right for consistent spacing */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    margin: 0; /* Removed margin-right to prevent layout inconsistency */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold; /* Made the text stand out more */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Added hover effect for better interactivity */
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem; /* Increased padding for a more spacious layout */
+    max-width: 800px; /* Set a max width for better content focus */
+    margin: 2rem auto; /* Centered the main content */
+    background-color: #fff; /* Added a white background to separate it from the body */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for better visual appeal */
 }
 
 footer {
@@ -38,4 +54,6 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 0.9rem; /* Adjusted font size for footer text */
+    border-top: 1px solid #444; /* Added a top border for separation */
 }
